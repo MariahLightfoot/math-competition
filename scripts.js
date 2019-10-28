@@ -23,7 +23,7 @@ function init () {
         
         if(mathProblems.length === 0){
             document.getElementById("mathProblemImage").width = "900";
-            document.getElementById("mathProblemImage").src = "file:///Users/mariahlightfoot/Documents/Projects/math-competition/images/end.jpg"; 
+            document.getElementById("mathProblemImage").src = "images/end.jpg"; 
         } else {
             let randomNumber = getRandomInt(mathProblems.length);
             let selection = mathProblems[randomNumber];
