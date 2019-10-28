@@ -19,10 +19,26 @@ function init () {
 
     goodLuckButton.onclick = getRandomMathProblem;
     function getRandomMathProblem(){
-        let selection = mathProblems[getRandomInt(3)];
-        document.getElementById("mathProblemImage").width = "900";
-        document.getElementById("mathProblemImage").src = `${selection.image}`;
-    }
+        console.log("mathproblems1" + mathProblems);
+        
+        if(mathProblems.length === 0){
+            document.getElementById("mathProblemImage").width = "900";
+            document.getElementById("mathProblemImage").src = "file:///Users/mariahlightfoot/Documents/Projects/math-competition/images/end.jpg"; 
+        } else {
+            let selection = mathProblems[getRandomInt(mathProblems.length)];
+            console.log("selection" + selection);
+            let extraction = mathProblems.splice(selection, 1);
+            usedMathProblems.push(extraction);
+            document.getElementById("mathProblemImage").width = "900";
+            document.getElementById("mathProblemImage").src = `${selection.image}`;
+        }
+        console.log("mathproblems2" + mathProblems);
+        console.log("usedmathproblems1" + usedMathProblems);
+        
+        
+    }       
+
+   
 }
 
 window.onload = init;
