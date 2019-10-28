@@ -19,21 +19,23 @@ function init () {
 
     goodLuckButton.onclick = getRandomMathProblem;
     function getRandomMathProblem(){
-        console.log("mathproblems1" + mathProblems);
+        console.log("OG " + mathProblems);
         
         if(mathProblems.length === 0){
             document.getElementById("mathProblemImage").width = "900";
             document.getElementById("mathProblemImage").src = "file:///Users/mariahlightfoot/Documents/Projects/math-competition/images/end.jpg"; 
         } else {
-            let selection = mathProblems[getRandomInt(mathProblems.length)];
-            console.log("selection" + selection);
-            let extraction = mathProblems.splice(selection, 1);
+            let randomNumber = getRandomInt(mathProblems.length);
+            let selection = mathProblems[randomNumber];
+            console.log("selection " + selection.name);
+            let extraction = mathProblems.splice(randomNumber, 1);
             usedMathProblems.push(extraction);
+            console.log("extraction " + extraction);
             document.getElementById("mathProblemImage").width = "900";
             document.getElementById("mathProblemImage").src = `${selection.image}`;
         }
-        console.log("mathproblems2" + mathProblems);
-        console.log("usedmathproblems1" + usedMathProblems);
+        console.log("OG-aftermath " + mathProblems);
+        console.log("USED " + usedMathProblems);
         
         
     }       
