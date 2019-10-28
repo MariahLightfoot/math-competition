@@ -6,9 +6,9 @@
 function init () {
 
     let mathProblems = [
-        {name: "a1_1", image: "file:///Users/mariahlightfoot/Documents/Projects/math-competition/images/a1_1.jpg"},
-        {name: "a1_2", image: "file:///Users/mariahlightfoot/Documents/Projects/math-competition/images/a1_2.jpg"},
-        {name: "a1_3", image: "file:///Users/mariahlightfoot/Documents/Projects/math-competition/images/a1_3.jpg"}
+        {name: "a1_1", image: "images/a1_1.jpg"},
+        {name: "a1_2", image: "images/a1_2.jpg"},
+        {name: "a1_3", image: "images/a1_3.jpg"}
     ]
 
     let usedMathProblems = [];
