@@ -90,7 +90,7 @@ function init () {
         console.log("OG " + mathProblems);
         
         if(mathProblems.length === 0){
-            document.getElementById("mathProblemImage").width = "900";
+            document.getElementById("mathProblemImage").width="500";
             document.getElementById("mathProblemImage").src = "images/mascot4.png"; 
         } else {
             let randomNumber = getRandomInt(mathProblems.length);
