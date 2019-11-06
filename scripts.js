@@ -91,7 +91,7 @@ function init () {
         
         if(mathProblems.length === 0){
             document.getElementById("mathProblemImage").width = "900";
-            document.getElementById("mathProblemImage").src = "images/end.jpg"; 
+            document.getElementById("mathProblemImage").src = "images/mascot4.png; 
         } else {
             let randomNumber = getRandomInt(mathProblems.length);
             let selection = mathProblems[randomNumber];
