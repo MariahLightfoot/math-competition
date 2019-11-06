@@ -16,6 +16,10 @@ h1{
     font-size: 40px;
 }
 
+#goodLuckButtonContainer{
+    padding-top: 50px;
+}
+
 #goodLuckButton{
     font-weight: 400;
     font-size: 32px;
